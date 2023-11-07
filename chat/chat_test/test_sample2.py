@@ -19,9 +19,25 @@ Django userモデルとは?
     https://self-methods.com/django-pytest-fixture/
 """
 
+# def test_error_is_one_user():
+#     print("このままでは動きません")
+#     username = "testuser"
+#     password = "testpassword"
 
-def test_error_is_one_user():
-    print("このままでは動きません")
+#     User.objects.create_user(username=username, password=password)
+#     # 登録されているユーザーの1件を取得
+#     saved_user = User.objects.all()[0]
+#     # 登録されているユーザーの件数を取得
+#     saved_user_count = User.objects.all().count()
+
+#     assert saved_user_count == 1
+#     assert saved_user.username == username
+
+
+# test_error_is_one_userをコメントアウトし「pytest chat/chat_test/test_sample2.py -s」でこのテストファイルが実行されることを確認
+@pytest.mark.django_db
+def test_is_one_user():
+    print("テストユーザーを作成します")
     username = "testuser"
     password = "testpassword"
 
@@ -34,22 +50,6 @@ def test_error_is_one_user():
     assert saved_user_count == 1
     assert saved_user.username == username
 
-
-# test_error_is_one_userをコメントアウトし「pytest chat/chat_test/test_sample2.py -s」でこのテストファイルが実行されることを確認
-# @pytest.mark.django_db
-# def test_is_one_user():
-#     print("テストユーザーを作成します")
-#     username = "testuser"
-#     password = "testpassword"
-
-#     User.objects.create_user(username=username, password=password)
-#     # 登録されているユーザーの1件を取得
-#     saved_user = User.objects.all()[0]
-#     # 登録されているユーザーの件数を取得
-#     saved_user_count = User.objects.all().count()
-
-#     assert saved_user_count == 1
-#     assert saved_user.username == username
 
 #     # 補足
 #     # Userクラスは使っていないので見たい人のみ見てください
