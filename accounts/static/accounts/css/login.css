@@ -1,0 +1,63 @@
+/*--------------通常PC-----------------*/
+main {
+    background: #ecedef;
+    text-align: center;
+}
+/* ----------タイトル表示---------------------- */
+.tittle-section-parent {
+ position: relative;
+ height: 35%;
+}
+.tittle-section-item {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.tittle-section-item > h1 { 
+    margin: unset;
+}
+/* ----------フォーム入力---------------------- */
+.post-section-parent {
+    height: 65%;
+    position: relative;
+}
+.post-section-item {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn {
+    background-color: #00b900;
+    color: white;
+    margin-top: 10%;
+}
+.password-reset, .create-account {
+    position: absolute;
+    bottom: 25%;
+}
+.password-reset {
+    right: 30%;
+}
+.create-account {
+    left: 30%;    
+}
+/*----------------スマホ横画面--------------------*/
+@media screen and (max-width: 767px) { 
+    h1 {
+        font-size: 20px;
+    }
+    .passwordReset {
+        margin-left: none;
+        position: absolute;
+        top: 7%;
+        right: 7%;
+    }
+    .post-section-item {
+        top: 20%;
+    }
+    .btn {
+        margin-top: 15%;
+    }
+}

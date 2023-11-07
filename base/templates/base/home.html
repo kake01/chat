@@ -1,0 +1,21 @@
+{% extends "base/index.html" %} {% load static %} {% block title %}Home
+{%endblock %} {% block cssJs %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'base/css/home.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="back-section">
+  <!-- リンクリスト -->
+  <div class="link-section">
+    <!-- chatリンク -->
+    <div class="chat-img-section">
+      <h1>{% url chat %}</h1>
+      <a href="{% url chat %}">
+        <img src="../../static/base/img/chat.png" alt="chatへ" />
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

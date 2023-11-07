@@ -1,0 +1,22 @@
+html {
+   height: 100%;
+}
+body {
+    margin: unset;
+    height: 100%;
+}
+main {
+    height: 100%;
+}
+.ContentBlok {
+    height: 100vh;
+}
+p {
+    margin: unset;
+}
+/* @media screen and (min-width: 1000px) {
+    img {
+        width: 65px;
+        height: 65px;
+    }
+} */

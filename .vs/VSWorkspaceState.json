@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\accounts\\templates",
+    "\\accounts\\templates\\accounts",
+    "\\chat",
+    "\\chat\\static",
+    "\\chat\\static\\chat",
+    "\\chat\\static\\chat\\wav",
+    "\\chat\\templates",
+    "\\chat\\templates\\chat"
+  ],
+  "SelectedNode": "\\chat\\static\\chat\\wav\\responsd.wav",
+  "PreviewInSolutionExplorer": false
+}

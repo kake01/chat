@@ -1,0 +1,21 @@
+{% extends "base/index.html" %} {% load static %} {% block title %}LogIn
+{%endblock %} {% block cssJs %}<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'accounts/css/login.css' %}"
+/>{% endblock %} {% block content %}
+<div class="tittle-section-parent">
+  <div class="tittle-section-item">
+    <h1>健康促進アプリ</h1>
+  </div>
+</div>
+<!-- ログインフォーム -->
+<div class="post-section-parent">
+  <div class="post-section-item">
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit" class="btn">ログイン</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
