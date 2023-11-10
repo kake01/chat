@@ -14,14 +14,6 @@ import django
 参考: https://qiita.com/_akiyama_/items/9ead227227d669b0564e#%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3fixture%E3%81%A8%E3%81%AF
 """
 
-# @pytest.fixture(autouse=True)
-# def enable_db_access_for_all_tests(db):
-# with connection.cursor() as cursor:
-#     cursor.execute("CREATE SCHEMA IF NOT EXISTS app")
-# schema_name = "your_schema_name"
-# with django.db.connection.cursor() as cursor:
-#     cursor.execute(f"SET search_path TO {schema_name}")
-
 
 @pytest.fixture()
 def setup_django_db():
