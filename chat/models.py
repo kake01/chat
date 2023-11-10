@@ -9,7 +9,9 @@ class Message(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '(Message:id=' + str(self.id) + ' , ' + 'content=' + self.content + 'respond=' + self.respond + str(self.pub_date) + ' ) '
+        return ("(Message:id=" + str(self.id) + " , " + "content=" +
+                self.content + "respond=" + self.respond + str(self.pub_date) +
+                " ) ")
 
     class Meta:
-        ordering = ('pub_date', )
+        ordering = ("pub_date", )
