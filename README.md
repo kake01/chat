@@ -33,4 +33,4 @@
 * * python_files = test_*.py
 * * * test_と命名されているファイルのみをpytestのコマンドを実行したときにテストファイルとしてみなすように設定
 * * * 参考: https://self-methods.com/django-pytest-basic/#index_id3
-6. 事前準備が完了
+7. 事前準備が完了
