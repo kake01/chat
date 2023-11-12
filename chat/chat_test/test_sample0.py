@@ -1,21 +1,5 @@
 import pytest
 """
-ステップ_1
-pip listを行い「pytest - djangoがインストールされていることを確認
-"""
-"""
-ステップ_2
-manage.pyと同階層にpytest.iniファイルがあり下記のコードが書かれていることを確認
-[pytest]
-DJANGO_SETTINGS_MODULE = chatBot2.settings
-python_files = test_.py
-    chat\test_img\sample0\pytest_ini.PNGを参照
-
-    少し解説
-        test_と命名されているファイルのみをテストファイルと認識してもらう為に記述
-        参考: https://self-methods.com/django-pytest-basic/#index_id3
-"""
-"""
 ステップ_3
     「pytest chat/chat_test/test_sample0.py -s」でこのテストファイルが実行されることを確認
     chat\test_img\sample0\実行されないテストメソッド.PNGを参照
