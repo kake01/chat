@@ -11,7 +11,7 @@
 2. activate 仮想環境名
     * activate化する
 3. pip install -r requirements.txt
-    * pi listを行い「pytest - django がインストールされていることを確認
+    * pip listを行い「pytest-django」 がインストールされていることを確認
 4. postgreSQLの設定を行う
 * ![postgreSQLの設定](README_img/postgresql.PNG)
 * * データベース名: chatapp
@@ -33,4 +33,12 @@
 * * python_files = test_*.py
 * * * test_と命名されているファイルのみをpytestのコマンドを実行したときにテストファイルとしてみなすように設定
 * * * 参考: https://self-methods.com/django-pytest-basic/#index_id3
-7. 事前準備が完了
+7. スーパーユーザーの作成を行う
+* python manage.py createsuperuser
+* ![スーパーユーザーの作成](README_img/スーパーユーザー作成.PNG)
+8. runserverする
+* python manage.py runserを実行
+* http://127.0.0.1:8000/にアクセスし先ほど作成したスーパーユーザーでログインする
+9. chatアプリケーションを触ってみる
+* ![チャットアプリケーション](README_img/chatアプリケーション.PNG)
+10. 事前準備が完了
