@@ -9,6 +9,7 @@ DEBUG = True
 STATIC_URL = "/static/"
 
 ALLOWED_HOSTS = []
+STATIC_ROOT = BASE_DIR / "static"
 
 INSTALLED_APPS = [
     "daphne",
