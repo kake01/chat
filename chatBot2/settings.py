@@ -10,6 +10,7 @@ STATIC_URL = "/static/"
 
 ALLOWED_HOSTS = []
 STATIC_ROOT = BASE_DIR / "static"
+# STATIC_ROOT = '/home/a-kuma/chatBot2/static/'
 
 INSTALLED_APPS = [
     "daphne",
