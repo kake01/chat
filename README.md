@@ -46,4 +46,5 @@
 # 参考資料
 * [pytestの入門](https://www.amazon.co.jp/%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95Python-BrianOkken-ebook/dp/B07F65PFZN/ref=sr_1_2?adgrpid=140889812067&hvadid=651053006122&hvdev=c&hvlocphy=1009132&hvnetw=g&hvqmt=e&hvrand=6292167689686095826&hvtargid=kwd-1676926081362&hydadcr=22032_13455213&jp-ad-ap=0&keywords=%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95python&sr=8-2)
 * [Tdd com Python](https://www.amazon.co.jp/Tdd-com-Python-Harry-Percival/dp/8575226428)
+* [コンテナ内でスーパーユーザー作成](https://qiita.com/LittleGreenMen/items/85d41c1fa6bb9bf4da42
 
