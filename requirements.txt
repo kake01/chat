@@ -30,6 +30,7 @@ packaging==21.3
 pip==21.2.4
 platformdirs==2.5.2
 pluggy==1.0.0
+psycopg2-binary==2.9.9
 psycopg2==2.8.6
 py==1.11.0
 pyasn1==0.4.8
